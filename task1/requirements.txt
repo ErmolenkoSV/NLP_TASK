@@ -1,0 +1,3 @@
+yargy>=0.16.0
+dataclasses
+

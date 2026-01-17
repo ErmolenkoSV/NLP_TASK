@@ -1,0 +1,185 @@
+[
+  {
+    "method": "Natasha",
+    "total_articles": 5,
+    "total_entities": 21,
+    "avg_time_per_article": 0.014295482635498047,
+    "entities_by_type": {
+      "ORG": 3,
+      "LOC": 10,
+      "PERSON": 8
+    },
+    "examples": [
+      {
+        "title": "TNFSF14",
+        "entities": [
+          {
+            "text": "TNFSF14",
+            "type": "ORG",
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "title": "Чиилийский район",
+        "entities": [
+          {
+            "text": "Шиелийский район",
+            "type": "LOC",
+            "start": 58,
+            "end": 74
+          },
+          {
+            "text": "Казахстан",
+            "type": "LOC",
+            "start": 130,
+            "end": 139
+          },
+          {
+            "text": "N |",
+            "type": "PERSON",
+            "start": 152,
+            "end": 155
+          },
+          {
+            "text": "E |",
+            "type": "PERSON",
+            "start": 211,
+            "end": 214
+          },
+          {
+            "text": "Кызылординская область",
+            "type": "LOC",
+            "start": 302,
+            "end": 324
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "method": "spaCy (ru_core_news_sm)",
+    "total_articles": 5,
+    "total_entities": 21,
+    "avg_time_per_article": 0.05042119026184082,
+    "entities_by_type": {
+      "ORG": 5,
+      "LOC": 8,
+      "PERSON": 8
+    },
+    "examples": [
+      {
+        "title": "TNFSF14",
+        "entities": [
+          {
+            "text": "TNFSF14",
+            "type": "ORG",
+            "start": 165,
+            "end": 172
+          },
+          {
+            "text": "NF-kB",
+            "type": "ORG",
+            "start": 216,
+            "end": 221
+          }
+        ]
+      },
+      {
+        "title": "Чиилийский район",
+        "entities": [
+          {
+            "text": "Шиелийский район",
+            "type": "LOC",
+            "start": 58,
+            "end": 74
+          },
+          {
+            "text": "Кызылординская область",
+            "type": "LOC",
+            "start": 302,
+            "end": 324
+          },
+          {
+            "text": "Нуржан Ахатов",
+            "type": "PERSON",
+            "start": 375,
+            "end": 388
+          },
+          {
+            "text": "Аким района",
+            "type": "LOC",
+            "start": 408,
+            "end": 419
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "method": "BERT (dslim/bert-base-NER)",
+    "total_articles": 5,
+    "total_entities": 33,
+    "avg_time_per_article": 1.5424477100372314,
+    "entities_by_type": {
+      "ORG": 8,
+      "LOC": 20,
+      "PERSON": 5
+    },
+    "examples": [
+      {
+        "title": "TNFSF14",
+        "entities": [
+          {
+            "text": "##B",
+            "type": "ORG",
+            "start": 220,
+            "end": 221,
+            "score": 0.6472682356834412
+          }
+        ]
+      },
+      {
+        "title": "Чиилийский район",
+        "entities": [
+          {
+            "text": "Р",
+            "type": "LOC",
+            "start": 39,
+            "end": 40,
+            "score": 0.5313917994499207
+          },
+          {
+            "text": "Ш",
+            "type": "LOC",
+            "start": 58,
+            "end": 59,
+            "score": 0.7553572058677673
+          },
+          {
+            "text": "К",
+            "type": "LOC",
+            "start": 130,
+            "end": 131,
+            "score": 0.5121937990188599
+          },
+          {
+            "text": "К",
+            "type": "LOC",
+            "start": 302,
+            "end": 303,
+            "score": 0.9179375171661377
+          },
+          {
+            "text": "##о",
+            "type": "LOC",
+            "start": 307,
+            "end": 308,
+            "score": 0.5870530605316162
+          }
+        ]
+      }
+    ]
+  }
+]
